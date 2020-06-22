@@ -17,7 +17,7 @@ const HomePage = () => (
       Explore
     </NavLink>
 
-    <h1>Welcome to The Cocktail Explorer!</h1>
+    <h1 id="h1-home">Welcome to The Cocktail Explorer!</h1>
 
     <img src={picture} className="pic" alt="cocktails" />
   </header>
