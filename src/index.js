@@ -5,6 +5,7 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import HomePage from "./Pages/HomePage";
 import ExplorePage from "./Pages/ExplorePage";
+import DrinkPage from "./Pages/DrinkPage";
 
 const ErrorPage = () => (
   <div>
@@ -19,6 +20,7 @@ const routes =
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
         <Route path="/explore" component={ExplorePage} />
+        <Route path="/drinks/:name" component={DrinkPage} />
         <Route component={ErrorPage} />
       </Switch>
     </BrowserRouter>
